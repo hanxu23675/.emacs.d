@@ -2,6 +2,10 @@
 ;;; Commentary:
 ;;; Code:
 
+;; Show the delimiters as rainbow color
+(use-package rainbow-delimiters
+  :init (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
+
 (global-display-line-numbers-mode)
 
 (electric-pair-mode)
